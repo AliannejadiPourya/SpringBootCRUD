@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: example-service
   datasource:
     url: 'jdbc:postgresql://localhost:5432/crud_database'
     username: myuser
@@ -10,3 +12,7 @@ spring:
       ddl-auto: update
 server:
   port: 7898
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
